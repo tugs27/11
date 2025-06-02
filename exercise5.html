@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  gap: 10px;
+
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 255, 0);
+}
+
+
+@media only screen and  (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 100px);
+  }
+}
+
+
+@media only screen and  (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 100px);
+  }
+}
+
+
+@media only screen and  (max-width: 480px) {
+  .container {
+    grid-template-columns: 100px;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+       
+      </div>
+</body>
+</html>
